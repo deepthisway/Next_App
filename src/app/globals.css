@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grey+Qo&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body{
+  overflow: hidden
+} */
+
+.font-bold-custom {
+    @apply text-white text-base font-semibold font-inter ;
+  }
+  
+  .font-light-custom {
+    @apply text-white text-base font-normal font-inter;
+  }
+
+.para-text{
+    @apply text-gray-500 text-base font-inter font-normal;
+}
+.heading-text{
+  @apply text-xl font-semibold font-inter;
+}
+
+.general-font{
+  @apply text-base font-normal font-inter;
+}
