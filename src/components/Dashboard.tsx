@@ -158,18 +158,68 @@ const Dashboard = ({ cardData, imageUrl }: DashboardProps) => {
                 </div>
                 <div className="text-red-500 mt-2">Upload the attendance sheet with student signature.</div>
               </div>
-              {/* <div className="mt-4 text-center">
-                <a href="#" className="text-blue-500 hover:underline">View All</a>
-              </div> */}
               </div>
             </div>
           </div>
 
           {/* Right Section */}
-          <div className="w-[35%]">
-            <div className="w-full h-[743px] border-2 rounded-lg object-cover">
-              <img src="https://static.vecteezy.com/system/resources/previews/001/811/014/original/social-media-messenger-networking-two-businesswoman-chat-flat-cartoon-illustration-for-web-banner-infographics-mobile-smart-phone-with-dialog-bubble-people-face-avatar-on-a-screen-vector.jpg" alt="Chat Icon" />
+          {/* first right */}
+          <div className="w-[35%] flex flex-col ">
+          <div className="bg-white rounded-lg border p-4 mb-4">
+  <h2 className="text-xl font-bold mb-4">Student Reviews</h2>
+  <p className="text-gray-500 mb-6">214,957 reactions</p>
+  <div className="flex items-center mb-4">
+    <img src="https://i.imgur.com/Y83F7rY.png" alt="Thomas" className="w-10 h-10 rounded-full mr-3" />
+    <div>
+      <h3 className="font-bold">Thomas</h3>
+      <p className="text-gray-700">Everyone who knows buys crypto, that's a practical solutions for funds transfer.</p>
+      <div className="flex mt-2">
+        <span className="mr-2"><img src="https://i.imgur.com/O2fI78W.png" alt="Fire" className="w-5 h-5" /></span>
+        <span>89</span>
+        <span className="ml-4"><img src="https://i.imgur.com/wU8kD8F.png" alt="Thumbs down" className="w-5 h-5" /></span>
+        <span>12</span>
+      </div>
+    </div>
+  </div>
+  <div className="flex items-center mb-4">
+    <img src="https://i.imgur.com/4y7kC79.png" alt="Master Cat" className="w-10 h-10 rounded-full mr-3" />
+    <div>
+      <h3 className="font-bold">Master Cat</h3>
+      <p className="text-gray-700">Don't worry! When all other currencies are obsolete, soul on earth will bitcoin!</p>
+      <div className="flex mt-2">
+        <span className="mr-2"><img src="https://i.imgur.com/O2fI78W.png" alt="Fire" className="w-5 h-5" /></span>
+        <span>128</span>
+        <span className="ml-4"><img src="https://i.imgur.com/wU8kD8F.png" alt="Thumbs down" className="w-5 h-5" /></span>
+        <span>16</span>
+      </div>
+    </div>
+  </div>
+  <div className="flex">
+    <input type="text" placeholder="Share your reaction" className="flex-1 border rounded-md px-3 py-2 mr-2" />
+    <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14.75 18.75h-12m12 0l-12 0m12 0l-12 0m12 0l-12 0m12 0l-12 0"></path>
+      </svg>
+    </button>
+  </div>
+</div>
+
+          {/* Second right */}
+          <div className="bg-white border rounded-lg p-6">
+            <h2 className="text-2xl font-bold mb-4">What we charge</h2>
+            <p className="text-gray-600 mb-6">Pricing and fees</p>
+            <p className="text-gray-600 mb-6">Choose whether you pay the fees, or pass them along to your attendees in the settings for each event.</p>
+            <div className="mb-4">
+              <h3 className="text-xl font-bold mb-2">Service fee</h3>
+              <p className="text-gray-600">This keeps the Eventbrite platform running</p>
+              <p className="text-gray-800 font-bold">3.5% + $1.29 per ticket</p>
             </div>
+            <div>
+              <h3 className="text-xl font-bold mb-2">Payment processing fee</h3>
+              <p className="text-gray-600">This offsets the cost of credit card transactions</p>
+              <p className="text-gray-800 font-bold">$2.9 per payment</p>
+          </div>
+        </div>
           </div>
         </div>
       </div>
