@@ -40,8 +40,8 @@ const publication = `• Chen, X., Paulson, E. S., Ahunbay, E., Sanli, A., Klawi
     <>
       <Topbar />
       <Teacher
-        name="Ryan Doblin"
-        email="RyanDoblin@gmail.com"
+        name="Ryan Doblen"
+        email="RyanDoblen@gmail.com"
         mobileNo="992394239"
         teacherId="873"
         location="Chicago, United States"
