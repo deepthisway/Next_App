@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "./Card";
+import Image from "next/image";
 
 interface TeacherProps {
   name: string;
@@ -14,7 +15,6 @@ interface TeacherProps {
   publication: string;
   linkedin: string;
   cardData: Array<{
-    imageUrl: string;
     icon?: React.ReactNode;
     title: string;
     description: string;
@@ -42,10 +42,12 @@ const Teacher = ({
           <p className="flex justify-center mb-2 text-blue-400 text-xl md:text-xl">
             #Ranked in Top 10 Teachers
           </p>
-          <img
+          <Image
             alt="Teacher"
             className="rounded-full h-[180px] w-[180px] md:h-[230px] md:w-[230px] mx-auto mb-5 object-cover"
             src={imageUrl}
+            width={230} 
+            height={230}
           />
 
           <h1 className="font-bold text-[24px] md:text-[32px] text-center text-[#292929]">
@@ -222,7 +224,6 @@ const Teacher = ({
             {cardData.map((card, index) => (
               <Card
                 key={index}
-                imageUrl={card.imageUrl}
                 icon={card.icon}
                 title={card.title}
                 description={card.description}

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 interface CardProps {
@@ -11,7 +12,7 @@ const Card = ({ imageUrl, icon, title, description }: CardProps) => {
   return (
     <div className="bg-[#E6F0FF] rounded-lg w-[90%] max-w-[230px] h-auto p-4 m-1.5 sm:w-[230px] sm:h-[223px]">
       {imageUrl ? (
-        <img
+        <Image
           alt={title}
           className="w-full h-[120px] object-cover rounded-md"
           src={imageUrl}

@@ -1,5 +1,6 @@
+import Image from "next/image";
 import Card2 from "./Card2";
-import Seats from "./seats";
+import Seats from "./Seats";
 
 interface DashboardProps {
   imageUrl: string;
@@ -24,7 +25,7 @@ const Dashboard = ({ cardData, imageUrl }: DashboardProps) => {
             {/* Image */}
             <div className="flex flex-col justify-center mb-5">
               <div className="flex flex-col">
-                <img
+                <Image
                   alt="Teacher"
                   className="rounded-full h-[223px] w-[223px] mt-4 ml-8 mb-3"
                   src={imageUrl}
@@ -169,27 +170,27 @@ const Dashboard = ({ cardData, imageUrl }: DashboardProps) => {
   <h2 className="text-xl font-bold mb-4">Student Reviews</h2>
   <p className="text-gray-500 mb-6">214,957 reactions</p>
   <div className="flex items-center mb-4">
-    <img src="https://i.imgur.com/Y83F7rY.png" alt="Thomas" className="w-10 h-10 rounded-full mr-3" />
+    <Image src="https://i.imgur.com/Y83F7rY.png" alt="Thomas" className="w-10 h-10 rounded-full mr-3" />
     <div>
       <h3 className="font-bold">Thomas</h3>
       <p className="text-gray-700">Everyone who knows buys crypto, that's a practical solutions for funds transfer.</p>
       <div className="flex mt-2">
-        <span className="mr-2"><img src="https://i.imgur.com/O2fI78W.png" alt="Fire" className="w-5 h-5" /></span>
+        <span className="mr-2"><Image src="https://i.img.com/O2fI78W.png" alt="Fire" className="w-5 h-5" /></span>
         <span>89</span>
-        <span className="ml-4"><img src="https://i.imgur.com/wU8kD8F.png" alt="Thumbs down" className="w-5 h-5" /></span>
+        <span className="ml-4"><Image src="https://i.img.com/wU8kD8F.png" alt="Thumbs down" className="w-5 h-5" /></span>
         <span>12</span>
       </div>
     </div>
   </div>
   <div className="flex items-center mb-4">
-    <img src="https://i.imgur.com/4y7kC79.png" alt="Master Cat" className="w-10 h-10 rounded-full mr-3" />
+    <Image src="https://i.img.com/4y7kC79.png" alt="Master Cat" className="w-10 h-10 rounded-full mr-3" />
     <div>
       <h3 className="font-bold">Master Cat</h3>
       <p className="text-gray-700">Don't worry! When all other currencies are obsolete, soul on earth will bitcoin!</p>
       <div className="flex mt-2">
-        <span className="mr-2"><img src="https://i.imgur.com/O2fI78W.png" alt="Fire" className="w-5 h-5" /></span>
+        <span className="mr-2"><Image src="https://i.img.com/O2fI78W.png" alt="Fire" className="w-5 h-5" /></span>
         <span>128</span>
-        <span className="ml-4"><img src="https://i.imgur.com/wU8kD8F.png" alt="Thumbs down" className="w-5 h-5" /></span>
+        <span className="ml-4"><Image src="https://i.img.com/wU8kD8F.png" alt="Thumbs down" className="w-5 h-5" /></span>
         <span>16</span>
       </div>
     </div>

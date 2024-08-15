@@ -1,7 +1,6 @@
 import Topbar from '@/components/Topbar'
 import Teacher from '@/components/Teacher'
 import { RatingsIcon, RankingIcon, BatchesIcon, LanguagesIcon, ChatIcon } from '@/icons/icon';
-import Dashboard from '@/components/Dashboard';
 
 export default function Home() {
   const cardData1 = [
@@ -36,27 +35,24 @@ const education = `• MSc in Medical Biophysics (Clinical Medical Biophysics Ma
 
 const publication = `• Chen, X., Paulson, E. S., Ahunbay, E., Sanli, A., Klawikowski, S., & Li, X. A. (2019). Measurement validation of treatment planning for an MR‐Linac. Journal of Applied Clinical Medical Physics, 20, 28-38 (2019)`;
 
-  return (
-    <>
-      <Topbar />
-      <Teacher
-        name="Ryan Doblen"
-        email="RyanDoblen@gmail.com"
-        mobileNo="992394239"
-        teacherId="873"
-        location="Chicago, United States"
-        imageUrl="https://s3-alpha-sig.figma.com/img/585d/480b/d17905db359f8c711418f17390b80b9e?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=N0PJZJ1I8gsbKT8vHX3okXNc6aijt0wvIZ0a1ekO2fnrkbEL5aeXjkJXSG6HlfiaHOjJXWCnV7uf4VboKFZGh2iQrl~wZ~hYg5IRKJO0ihQ3ypMYqeLtCYtYxfv2PvMA6WgS3jHkkIt5cdUlJfiTHjiTzXKFEQ1wZDa5qn2Gfj6WC68kHzknDDkQemigrfMCUkTXeBIESUxUopevjjqWVGFcQEx-xadRhDLFHzCxppLBCjWbpk342-3TF4~lgePPBa67-nbERZ5iLIL6u00uXlmG9U36K1aAG7zXp-yAh0HL90DQJ6M2n2Ce8GXJ6dSh20Tuz5WfULw3NH3w-6TQZg__"
-        about={about}
-        workHistory={workHistory}
-        education={education}
-        publication={publication}
-        cardData={cardData1}
-      />
-      {/* <Dashboard
-        imageUrl="https://s3-alpha-sig.figma.com/img/585d/480b/d17905db359f8c711418f17390b80b9e?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=N0PJZJ1I8gsbKT8vHX3okXNc6aijt0wvIZ0a1ekO2fnrkbEL5aeXjkJXSG6HlfiaHOjJXWCnV7uf4VboKFZGh2iQrl~wZ~hYg5IRKJO0ihQ3ypMYqeLtCYtYxfv2PvMA6WgS3jHkkIt5cdUlJfiTHjiTzXKFEQ1wZDa5qn2Gfj6WC68kHzknDDkQemigrfMCUkTXeBIESUxUopevjjqWVGFcQEx-xadRhDLFHzCxppLBCjWbpk342-3TF4~lgePPBa67-nbERZ5iLIL6u00uXlmG9U36K1aAG7zXp-yAh0HL90DQJ6M2n2Ce8GXJ6dSh20Tuz5WfULw3NH3w-6TQZg__"
-        cardData={cardData2} */}
-
+    return (
+      <>
+        <Topbar />
+        <Teacher
+          name="Ryan Doblen"
+          email="RyanDoblen@gmail.com"
+          mobileNo="992394239"
+          teacherId="873"
+          location="Chicago, United States"
+          imageUrl="https://s3-alpha-sig.figma.com/img/585d/480b/d17905db359f8c711418f17390b80b9e?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=N0PJZJ1I8gsbKT8vHX3okXNc6aijt0wvIZ0a1ekO2fnrkbEL5aeXjkJXSG6HlfiaHOjJXWCnV7uf4VboKFZGh2iQrl~wZ~hYg5IRKJO0ihQ3ypMYqeLtCYtYxfv2PvMA6WgS3jHkkIt5cdUlJfiTHjiTzXKFEQ1wZDa5qn2Gfj6WC68kHzknDDkQemigrfMCUkTXeBIESUxUopevjjqWVGFcQEx-xadRhDLFHzCxppLBCjWbpk342-3TF4~lgePPBa67-nbERZ5iLIL6u00uXlmG9U36K1aAG7zXp-yAh0HL90DQJ6M2n2Ce8GXJ6dSh20Tuz5WfULw3NH3w-6TQZg__"
+          about={about}
+          workHistory={workHistory}
+          education={education}
+          publication={publication}
+          cardData={cardData1}
+          linkedin="Dylan1432"
         />
-    </>
-  );
+      </>
+    );
+
 }
